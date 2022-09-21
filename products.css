@@ -1,0 +1,170 @@
+/*Navbar*/
+/* for all links */
+.L {
+    color: #000;
+}
+
+.L:hover {
+    text-decoration: underline;
+    color: rgb(241, 6, 112);
+
+}
+
+/*Links dropdown*/
+
+.product-dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 100px;
+    left: 100px;
+    padding: 0 50px;
+
+    background-color: #000;
+    z-index: 3232;
+
+
+}
+
+.L:hover .product-dropdown {
+    display: block;
+}
+
+
+/*Search Box*/
+.search {
+    width: 340px;
+
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    background: whitesmoke;
+    height: 32px;
+
+    border: 2.5px solid rgb(251, 0, 109);
+    border-radius: 34px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 2.5rem;
+}
+
+.search-icon {
+    z-index: 2;
+    margin-top: -9.5%;
+    margin-left: 90%;
+    color: rgb(251, 0, 109);
+}
+
+.search-icon i {
+    color: white;
+}
+
+/*Navbar icons*/
+.wishlist,
+.cart,
+.user {
+    font-size: 18.2px;
+    transition: all 0.3s ease-in-out;
+    color: #000;
+}
+
+.wishlist:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+.cart:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+.user:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+.recent-launch {
+    background: rgb(150, 7, 69);
+    width: 30%;
+    height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size:1.23rem;
+
+
+}
+.cc{
+    top:50px;
+}
+.ic:hover {
+
+    box-shadow: 0px 0px 2px 2px rgba(215, 0, 68, 0.15);
+}
+
+.card {
+    overflow: hidden;
+}
+
+@media screen and (max-width:999px) {
+    .col-6 {
+        margin-bottom: 44px;
+    }
+}
+
+/*To make mini product carousel*/
+
+
+#but1 {
+    background-color: #900C3F;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+
+}
+
+#but2 {
+    background-color: #f39c12;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+
+}
+
+#but3 {
+    background-color: #dc7633;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+
+#but4 {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #AA336A;
+
+}
+
+#but5 {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color:
+        #642800;
+}
+
+#but6 {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #556b2f;
+}
+
+.carousel-indicators {
+    top: 280px;
+}
+#ic:hover{
+    -webkit-box-shadow: 0 0 10px rgb(153, 5, 67);
+        box-shadow: 0 0 10px rgb(153, 5, 67);
+}

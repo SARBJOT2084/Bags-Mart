@@ -1,0 +1,905 @@
+.navbar-brand {
+    /* font-family: 'Ubuntu'; */
+
+    font-size: 1.35rem;
+    /* font-weight: bold; */
+
+}
+
+.carousel .slide {
+    margin-top: 5%;
+}
+
+#half_section {
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+}
+
+.ct:hover {
+    color: #A00649;
+}
+
+#L {
+    color: #000;
+    transition: hover 4s;
+}
+
+#L:hover {
+    color: #B6145B;
+    text-decoration: underline;
+    transition-timing-function: ease-in;
+
+}
+
+.cart {
+    margin-right: 34%;
+    line-height: 2;
+    transition: all 0.34s ease-in-out;
+    line-height: 1;
+}
+
+.cart:hover {
+    color: #B6145B;
+
+    transform: scale(1.11);
+}
+
+.wishlist {
+    transition: all 0.34s ease-in-out;
+
+}
+
+.wishlist:hover {
+    color: #B6145B;
+
+    transform: scale(1.11);
+
+}
+
+i {
+    font-size: 1.20rem;
+}
+
+.slide {
+    z-index: 0;
+}
+
+/*Products Section*/
+#product-section {
+    display: none;
+
+    width: 80%;
+    height: 500px;
+    margin-top: auto;
+    margin: auto;
+    /* box-shadow: 0 -1px 1px gray, 0 -1px 1px gray, 0 1px 1px gray; */
+    background-color: whitesmoke;
+    transition: all 2000ms ease-in-out;
+    position: fixed;
+}
+
+#exampleModal {
+    top: 20%;
+
+}
+
+.product-dropdown {
+    /* display: visible; */
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    padding: 0 50px;
+
+
+}
+
+.product-dropdown:hover {
+    color: #A00649;
+}
+
+/*Men Collection*/
+#men-section {
+    display: none;
+
+    width: 80%;
+    height: 500px;
+    margin-top: auto;
+    margin: auto;
+    z-index: 2;
+    position: fixed;
+    background-color: whitesmoke;
+}
+
+/*Women Collection*/
+#women-section {
+    display: none;
+    width: 80%;
+    height: 500px;
+    margin-top: auto;
+    margin: auto;
+    z-index: 2;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+/*Students Collection*/
+#student-section {
+    display: none;
+
+    width: 80%;
+    height: 500px;
+    margin-top: auto;
+    margin: auto;
+    z-index: 2;
+    background-color: whitesmoke;
+    position: fixed;
+
+}
+
+/*Search Bar*/
+
+/* 
+.wrapper {
+    width: 400px;
+}
+
+.wrapper .search-input {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    background: #000;
+    color: #fff;
+}
+
+.search-input.active input {
+    border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+} */
+
+.autocom-box li {
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+    display: block;
+}
+
+.autocom-box li:hover {
+    background: #efefef;
+}
+
+.search-input .icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #A40048;
+    cursor: pointer;
+}
+
+/*Categories Section*/
+.container-fluid h3 {
+    font-family: 'Montserrat-Black', sans-serif;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.row {
+    text-align: center;
+}
+
+.card-body {
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+
+.card-body img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.56s ease-in-out;
+
+
+    /* object-fit: cover; */
+}
+
+.card:hover .card-footer {
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+    color: #fff;
+
+
+}
+
+.text-over-hover {
+    /* width:250px;
+    height:250px; */
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    position: absolute;
+
+}
+
+.card:hover .card-body img {
+    transform: scale(1.3, 1.3);
+    z-index: 200;
+}
+
+.card-body img:hover .il {
+    background: #A00649;
+}
+
+
+.card-body:hover .card-footer {
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+    color: #fff;
+
+
+}
+
+.card-body img:hover .text-over-hover {
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.card-header {
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    font-size: 1.35rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+
+.text-over-hover ul li {
+    color: whitesmoke;
+}
+
+.text-hover-2 {
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    position: absolute;
+}
+
+.men {
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
+}
+
+
+
+
+
+
+
+/*For Extra Responsiveness */
+/*1196×1360.75*/
+/*548×1304.52*/
+/*Gives space to category cards when they switch to  */
+@media only screen and (min-width:716px) and (max-width:991px) {
+
+
+    .card {
+        margin-bottom: 8%;
+    }
+
+    .men {
+        margin-bottom: 8%;
+    }
+
+    .women {
+        margin-bottom: 8%;
+    }
+
+    .student {
+        margin-bottom: 8%;
+    }
+
+    .office {
+        margin-bottom: 8%;
+    }
+
+    .women .ii {
+        margin-left: 20.32%;
+    }
+
+    .office .ii {
+        margin-left: 20.32%;
+    }
+
+    .coll-c {
+        margin-left: 600px;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        font-size: 20px;
+    }
+
+
+
+}
+
+
+
+.h1 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h1:hover {
+    color: #4267B2;
+    transform: scale(1.5);
+
+}
+
+.h2 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h2:hover {
+    color: #1DA1F2;
+    transform: scale(1.5);
+
+}
+
+.h3 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h3:hover {
+    color: #DB4437;
+    background: transparent;
+    transform: scale(1.5);
+
+}
+
+.h4 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h4:hover {
+    color: #fb3958;
+    transform: scale(1.5);
+
+}
+
+.h5 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h5:hover {
+    color: #4267B2;
+    transform: scale(1.5);
+
+}
+
+.h6 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h6:hover {
+    color: #000;
+    transform: scale(1.5);
+
+}
+
+/*background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("sss.jpg");*/
+.text-reset {
+    text-decoration: none;
+}
+
+.text-reset:hover {
+    text-decoration: underline;
+
+}
+
+.ll {
+    border-top: 1px solid rgb(89, 89, 89);
+}
+
+.t {
+    margin-left: 15px;
+}
+
+/*Below Category Section*/
+/*Men Section*/
+
+.m1 {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1c87c9;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 300px;
+    height: 300px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+
+}
+
+.men:hover .m1 {
+    background-color: rgba(255, 255, 255, 0.65);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*Women Section*/
+/* .women {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    width:320px;
+    height:250px;
+    border-radius:23px;
+} */
+/*Student Section*/
+/* .student{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    width:320px;
+    height:250px;
+    border-radius:23px;
+} */
+/*Office Use*/
+/* .office{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    width:320px;
+    height:250px;
+    border-radius:23px;
+} */
+.ii {
+
+    height: 250px;
+    width: 300px;
+    border-radius: 23px;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+
+.card-img-overlay {
+    overflow: hidden;
+}
+
+.rr {
+
+    text-align: center;
+
+}
+
+/*New Collection*/
+#text-new-collection {
+    z-index: 1;
+    height: 610px;
+    width: 99.09%;
+    position: absolute;
+    top: 102.45%;
+    bottom: 0;
+
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+#text-over-new {
+
+    color: whitesmoke;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    margin-right: 60%;
+    z-index: 3;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5rem;
+    width: 100px;
+    background: transparent;
+    text-align: center;
+}
+
+#new-collection {
+    height: 600px;
+    border-radius: 0;
+
+}
+
+#new-collection video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+#text-over-button {
+    color: whitesmoke;
+    margin-left: 45%;
+    margin-top: 25%;
+    margin-bottom: 50%;
+    margin-right: 60%;
+    z-index: 4;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    transition: all 0.56s ease-in-out;
+
+}
+
+#text-over-button:hover {
+    color: #000;
+    background-color: whitesmoke;
+    border: 1.75px solid rgb(0, 14, 83);
+}
+
+.maintxt {
+    visibility: hidden;
+    background-size: cover;
+    opacity: 1;
+    transition: all 0.323s ease-in-out;
+}
+
+/*Modal Properites*/
+#modal-button {
+
+    background-color: rgb(221, 72, 112);
+    border-radius: 0;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+  font-size:11px;
+}
+
+#modal-input {
+    height: 40px;
+    width: 300px;
+    border: 1.5px solid rgb(221, 72, 112);
+    font-size: 1.234rem;
+}
+
+#modal-input:focus {
+    outline: none;
+}
+
+#modal-button:focus {
+    outline: none;
+}
+.Icons{
+    transition:transform 0.32s ease-in-out;
+}
+.Icons:hover{
+    transform:scale(1.3,1.3);
+}
+
+/*to change color of collapsable button*/
+.coll-c {
+    color: #B6145B;
+
+}
+
+.card-title {
+    color: #fff;
+}
+
+/*Men over text*/
+.mn {
+    /* visibility: hidden; */
+    transition: all 0.567s ease-in-out;
+    /* opacity: 0.33; */
+    background: rgba(235, 53, 131, 0.7);
+    height: 250px;
+    width: 140px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    /* max-height: 100%;
+    max-width: 100%; */
+    margin-left: 10%;
+    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+
+}
+
+/*Women over text*/
+.wn {
+    /* visibility: hidden; */
+    transition: all 0.567s ease-in-out;
+    /* opacity: 0.33; */
+    background: rgba(235, 53, 131, 0.7);
+    height: 250px;
+    width: 140px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    /* max-height: 100%;
+     max-width: 100%; */
+    margin-left: 53.85%;
+    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+
+    margin-right: 40%;
+}
+
+/*Students Collection*/
+.std {
+    /* visibility: hidden; */
+    transition: all 0.567s ease-in-out;
+    /* opacity: 0.33; */
+    background: rgba(235, 53, 131, 0.7);
+    height: 250px;
+    width: 140px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    /* max-height: 100%;
+    max-width: 100%; */
+    margin-left: 10%;
+    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+/*office collection*/
+.off {
+    /* visibility: hidden; */
+    transition: all 0.567s ease-in-out;
+    /* opacity: 0.33; */
+    background: rgba(235, 53, 131, 0.7);
+    height: 250px;
+    width: 140px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    /* max-height: 100%;
+      max-width: 100%; */
+    margin-left: 53.85%;
+    overflow: hidden;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.card:hover .off {
+    visibility: visible;
+    /* opacity: 0.5; */
+    width: 300px;
+    margin-left: 10%;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+.card:hover .std {
+    visibility: visible;
+    /* opacity: 0.5; */
+    width: 300px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+
+.card:hover .wn {
+    visibility: visible;
+    /* opacity: 0.5; */
+    width: 300px;
+    margin-left: 10%;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+.card:hover .mn {
+    visibility: visible;
+    /* opacity: 0.5; */
+    width: 300px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    /* transform: rotate(45deg);
+    height: 230px;
+    transition: .5s;
+    border-top-right-radius: 23px;
+    margin-top:5%;
+    margin-left: -8.76%;
+    margin-bottom: -20%;
+    width: 250px;
+    overflow-wrap: break-word;
+    overflow-x:hidden; */
+
+}
+
+.card:after .explore {
+    visibility: hidden;
+}
+
+.card:hover .card-title {
+    visibility: hidden;
+}
+
+.card:hover .card-text {
+    visibility: hidden;
+}
+
+/* explore button */
+.explore {
+    visibility: hidden;
+
+    /* font-size: 23px; */
+
+    transition: all 0.2s;
+}
+
+.card:hover .explore {
+    visibility: visible;
+}
+
+.random {
+    overflow: hidden;
+}
+
+.men img {
+    object-fit: cover;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-text {
+
+    color: white;
+
+
+
+}
+
+.card-size {
+    height: 600px;
+    border-radius: 0;
+}
+
+.newt {
+    margin-top: 15%;
+    color: #fff;
+
+}
+
+.newc {
+
+    background: rgba(0, 0, 0, 0.65);
+
+}
+
+/*Search Box*/
+.search {
+    width: 340px;
+
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    background: whitesmoke;
+    height: 32px;
+
+    border: 2.5px solid rgb(251, 0, 109);
+    border-radius: 34px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 2.5rem;
+}
+
+.search-icon {
+    z-index: 2;
+    margin-top: -9.5%;
+    margin-left: 90%;
+    color: rgb(251, 0, 109);
+}
+
+.search-icon i {
+    color: white;
+}
+
+#collection-head {
+    font-family: "Montserrat-Black", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #A00649;
+    margin-top: 5%;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="images/bag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--google montesserat font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!--google ubuntu font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!--google mulish font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <!--bootstrap->
+  <!-CSSonly-->
+  <!--Bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--JavaScript Bundle with Popper-->
+  <!--to make project working with bootstrap javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!----Bootstrap 4-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!--Css File for providing styles if required other than bootstrap-->
+
+  <link href="index.css" rel="stylesheet">
+  <!--jquery file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    /* .container {
+      margin: top 10%;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:before {
+      position: absolute;
+      content: '';
+      width: 80%;
+      height: 220%;
+      background: rgba(235, 53, 131, 0.7);
+      top: -50%;
+      left: -100%;
+      z-index: 1;
+      transform: rotate(25deg);
+      transform-origin: center top 0;
+      transition: .5s;
+
+    }
+
+    .card:hover:before {
+      left: 10%;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-text {
+      width: 100%;
+      padding: 0 20px;
+      position: absolute;
+      top: -100%;
+      color: #fff;
+      left: 0;
+      z-index: 2;
+      transition: 1.1s;
+
+    }
+
+    .card-text h3 {
+      font-family: poppins;
+    }
+
+    .card:hover .card-text {
+      top: 80px;
+    } */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #644bff;
+      padding: 0 20px;
+    }
+
+    ::selection {
+      color: #fff;
+      background: #664AFF;
+    }
+
+    .wrapper {
+      max-width: 450px;
+      margin: 150px auto;
+    }
+
+    .wrapper .search-input {
+      background: #fff;
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+      box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    .search-input input {
+      height: 55px;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 60px 0 20px;
+      font-size: 18px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-input.active input {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .search-input .autocom-box {
+      padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .search-input.active .autocom-box {
+      padding: 10px 8px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .autocom-box li {
+      list-style: none;
+      padding: 8px 12px;
+      display: none;
+      width: 100%;
+      cursor: default;
+      border-radius: 3px;
+    }
+
+    .search-input.active .autocom-box li {
+      display: block;
+    }
+
+    .autocom-box li:hover {
+      background: #efefef;
+    }
+
+    .search-input .icon {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 55px;
+      width: 55px;
+      text-align: center;
+      line-height: 55px;
+      font-size: 20px;
+      color: #644bff;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    let suggestions = [
+      "Channel",
+      "CodingLab",
+      "CodingNepal",
+      "YouTube",
+      "YouTuber",
+      "YouTube Channel",
+      "Blogger",
+      "Bollywood",
+      "Vlogger",
+      "Vechiles",
+      "Facebook",
+      "Freelancer",
+      "Facebook Page",
+      "Designer",
+      "Developer",
+      "Web Designer",
+      "Web Developer",
+      "Login Form in HTML & CSS",
+      "How to learn HTML & CSS",
+      "How to learn JavaScript",
+      "How to became Freelancer",
+      "How to became Web Designer",
+      "How to start Gaming Channel",
+      "How to start YouTube Channel",
+      "What does HTML stands for?",
+      "What does CSS stands for?",
+    ];
+    // getting all required elements
+    const searchWrapper = document.querySelector(".search-input");
+    const inputBox = searchWrapper.querySelector("input");
+    const suggBox = searchWrapper.querySelector(".autocom-box");
+    const icon = searchWrapper.querySelector(".icon");
+    let linkTag = searchWrapper.querySelector("a");
+    let webLink;
+
+    // if user press any key and release
+    inputBox.onkeyup = (e) => {
+      let userData = e.target.value; //user enetered data
+      let emptyArray = [];
+      if (userData) {
+        icon.onclick = () => {
+          webLink = `https://www.google.com/search?q=${userData}`;
+          linkTag.setAttribute("href", webLink);
+          linkTag.click();
+        }
+        emptyArray = suggestions.filter((data) => {
+          //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+          return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArray = emptyArray.map((data) => {
+          // passing return data inside li tag
+          return data = `<li>${data}</li>`;
+        });
+        searchWrapper.classList.add("active"); //show autocomplete box
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+          //adding onclick attribute in all li tag
+          allList[i].setAttribute("onclick", "select(this)");
+        }
+      } else {
+        searchWrapper.classList.remove("active"); //hide autocomplete box
+      }
+    }
+
+    function select(element) {
+      let selectData = element.textContent;
+      inputBox.value = selectData;
+      icon.onclick = () => {
+        webLink = `https://www.google.com/search?q=${selectData}`;
+        linkTag.setAttribute("href", webLink);
+        linkTag.click();
+      }
+      searchWrapper.classList.remove("active");
+    }
+
+    function showSuggestions(list) {
+      let listData;
+      if (!list.length) {
+        userValue = inputBox.value;
+        listData = `<li>${userValue}</li>`;
+      } else {
+        listData = list.join('');
+      }
+      suggBox.innerHTML = listData;
+    }
+
+  </script>
+</head>
+
+<body>
+  <!-- <div class="wrapper">
+    <div class="search-input">
+      <a href="" target="_blank" hidden></a>
+      <input type="text" placeholder="Type to search">
+      <div class="autocom-box">
+
+      </div>
+      <div class="icon">
+        <i class="fas fa-search">
+
+        </i>
+      </div>
+    </div>
+  </div> -->
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <div class="form-outline">
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required />
+        <label for="validationCustom01" class="form-label">First name</label>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-outline">
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required />
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="input-group form-outline">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+          required />
+        <label for="validationCustomUsername" class="form-label">Username</label>
+        <div class="invalid-feedback">Please choose a username.</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-outline">
+        <input type="text" class="form-control" id="validationCustom03" required />
+        <label for="validationCustom03" class="form-label">City</label>
+        <div class="invalid-feedback">Please provide a valid city.</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-outline">
+        <input type="text" class="form-control" id="validationCustom05" required />
+        <label for="validationCustom05" class="form-label">Zip</label>
+        <div class="invalid-feedback">Please provide a valid zip.</div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+        <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+        <div class="invalid-feedback">You must agree before submitting.</div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="images/backpacks.jpg" alt="rerke">
+          <div class="card-text">
+            <h3>Backpacks</h3>
+            <h5>Starts From 399</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict';
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach((form) => {
+        form.addEventListener('submit', (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();</script>
+
+
+</body>
+
+</html>

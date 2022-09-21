@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BagsSite.com</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/bag.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--google montesserat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--google ubuntu font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!--google mulish font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <!--bootstrap->
+    <!-CSSonly-->
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--JavaScript Bundle with Popper-->
+    <!--to make project working with bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!----Bootstrap 4-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!--Css File for providing styles if required other than bootstrap-->
+
+    <link href="index.css" rel="stylesheet">
+    <!--jquery file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width:650px;height:300px;">
+
+                <button type="button" class="btn text-light"
+                    style="margin-left:97%;margin-top:-1%;padding-bottom:7%;width:40px;height:30px;background-color:rgb(221, 72, 112);font-size:1.55rem;"
+                    data-bs-dismiss="modal" aria-label="Close">x</button>
+
+                <div class="modal-body ">
+                    <div class="d-flex">
+                        <img src="images/p2.jpeg" height="300" width="250"
+                            style="margin-top:-10.24%;margin-left:-2.5%;">
+                        <div class="mb-5" style="font-size:23px;">
+                            15% off on your first order
+                            <div class="d-flex mt-3">
+                                <input type="email" class='ms-2 ' placeholder="Email" id="modal-input" required>
+                                <button type="button" class="btn text-light" id="modal-button">Subscribe</button>
+                            </div>
+                            <p class="ms-3 mt-3"
+                                style="color:rgb(221,72,112);font-size:1.23rem;font-family:'Ubuntu',sans-serif;">
+                                Subscribe to our newsletter</p>
+                            <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f ms-5 me-5 Icons"
+                                    style="font-size:28px; color:#4267B2;"></i></a>
+                            <a href="https://www.google.com/"> <i class="fa-brands fa-google me-5 Icons"
+                                    style="font-size:28px; color: #DB4437;;"></i></a>
+                            <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram me-5 Icons"
+                                    style="font-size:28px;color:#cd486b;"></i></a>
+                            <a href="https://www.twitter.com"> <i class="fa-brands fa-twitter me-5 Icons"
+                                    style="font-size:28px;color:#1DA1F2;"></i></a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow p-3 bg-white">
+        <a class="navbar-brand" href="index.html"><img src="images\bag.png" height="30" width="30">BagsSite.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" class="coll-c">
+            <span><i class="fa-solid fa-bars    "></i></span>
+        </button>
+        <!--Collapsable by button-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav ms-4">
+                <!--margin space is set to auto(ms-auto)-->
+                <li class="nav-item la">
+                    <a class="nav-link" id="L" href="products.html">PRODUCTS<img class='ms-3'
+                            src=" images/down-arrow.png" height="10" width="10"></a>
+                </li>
+                <li class="nav-item ms-4">
+
+                    <a class="nav-link" id="L" href="bags.html">MEN<img src="images/down-arrow.png" class='ms-3'
+                            height="10" width="10"></a>
+                </li>
+                <li class="nav-item ms-4">
+                    <a class="nav-link" id="L" href="bags.html">WOMEN<img src="images/down-arrow.png" class='ms-3'
+                            height="10" width="10"></a>
+                </li>
+                <li class="nav-item ms-4">
+                    <a class="nav-link" id="L" href="students.html">STUDENTS<img src="images/down-arrow.png"
+                            class='ms-3' height="10" width="10"></a>
+                </li>
+
+                <li class="nav-item ms-4" id="L">
+
+                    <a class="nav-link" id="L" href="contactus.html">CONTACT US</a>
+                </li>
+                <!--Searchbar-->
+                <li class="nav-item ms-3 mt-2" id="L">
+
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="search ms-5 mt-0">
+                            <input type="search" placeholder="Search for bags...">
+                            <div class="search-icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="wrapper">
+                            <div class="search-input">
+                                <a href="" target="_blank" hidden></a>
+                                <input type="text" placeholder="Search for bags...">
+                                <div class="autocom-box">
+
+                                </div>
+                                <div class="icon"><i class="fas fa-search"></i></div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="search">
+                            <input type="search" name="search" placeholder="Search for bags...">
+                            <div class="s-icon">
+                               <span><i class="fas fa-search"></i></span> 
+                            </div>
+                        </div> -->
+
+                    </div>
+
+
+                </li>
+            </ul>
+        </div>
+        <!--icons wishlist cart-->
+        <div class="navbar-nav ms-auto pe-3  mt-3">
+            <!-- <i class="fa-solid fa-magnifying-glass ps-3"></i> -->
+            <i class="fa-sharp fa-solid fa-heart wishlist "><span class="badge badge-primary">2</span></i>
+            <i class="fa-solid fa-bag-shopping ps-3 cart"></i>
+            <a href="login.html" style="color:black;" class="ct"><i class="fa-solid fa-user cart"></i></a>
+
+        </div>
+
+
+
+    </nav>
+
+
+
+
+    <!--sections displayed on hovering over links -->
+
+    <div id="product-section" class="shadow shadow-intensity-xl container">
+        <br><br><br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo ipsa
+        optio, soluta,
+        labore impedit
+        quasi amet suscipit fugiat ex autem alias cupiditate nostrum possimus pariatur temporibus praesentium ut
+        laborum
+        facilis perspiciatis tempore officia! Voluptate, suscipit minima perspiciatis repudiandae dolorem labore,
+        vel ea
+        cupiditate architecto et, earum commodi. Rem asperiores eos rerum, non impedit corporis similique officia
+        provident quam sint consequatur odit, ea eveniet vel, ratione illum aspernatur dolore velit ipsum dicta?
+        Obcaecati earum, eius blanditiis magni officia laborum modi saepe inventore quos consequuntur! Reprehenderit
+        sunt atque magnam, sapiente velit maiores numquam id facilis nobis nulla. Facere sapiente tempore pariatur
+        error
+        animi ullam dolores deleniti maiores repudiandae iste, atque sed neque numquam laudantium quos commodi
+        excepturi
+        totam at iusto. Laboriosam iure animi omnis accusamus officia saepe? Inventore atque necessitatibus mollitia
+        ipsam, excepturi optio id assumenda quod voluptas doloremque perferendis quas molestias iste. Eum ipsum
+        quasi
+        debitis consectetur sunt optio tenetur ipsa laborum error ipsam voluptas quas illum libero inventore,
+        doloremque
+        sed odit quibusdam illo tempora dignissimos unde! Maxime velit, similique eius distinctio quis rerum earum
+        aut
+        dolorum dolore perferendis expedita commodi laborum molestiae. Nulla, et consequuntur. Sit modi excepturi,
+        voluptatibus facilis autem ab error ullam voluptatem, quia vero dolor alias eligendi maiores blanditiis
+        accusantium libero, aut eius. Voluptas, ut incidunt neque sequi aliquam exercitationem voluptates. Saepe
+        dolores
+        sunt praesentium neque repellendus ipsam sint qui! Repudiandae numquam consectetur sequi beatae pariatur
+        nesciunt velit illum accusantium! Inventore cumque debitis iusto accusamus aut, magni in ullam tempore et
+        amet,
+        libero aliquid dolor explicabo totam fugit? Distinctio itaque amet cum ut expedita eveniet iure, illum,
+        nostrum
+        quo recusandae doloribus consequatur? Molestias laboriosam beatae dignissimos reiciendis dolor, architecto
+        ipsa
+        rem totam asperiores at reprehenderit quibusdam, error omnis impedit molestiae, neque sapiente labore cumque
+        facere possimus dolore. Libero amet laboriosam beatae ipsum iure, ea et eveniet!
+    </div>
+
+
+    <!--Image Slider-->
+    <div id="carouselExampleCaptions" class="carousel slide pl-0 pr-0" data-bs-ride="carousel" data-bs-pause="hover">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-interval="6000" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-interval="6000" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-interval="6000" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-interval="6000" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://c1.wallpaperflare.com/preview/293/253/161/bag-arm-fashion-style.jpg" height="620"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Latest Brands at great Prices.</h3>
+                        <!-- <button class="btn btn-outline-light btn-lg">Shop Now</button> -->
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.prakati.in/wp-content/uploads/2020/12/Artella-Handbag-2.jpeg" height="620"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="color:#fff;">Shop the Latest Handbags from Artella</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/huge.png" class="d-block w-100" alt="..." height="620">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Autumn Collection</h3>
+                        <p>Starting from Rs.3,990</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img height="620"
+                        src="https://cdn.shopify.com/s/files/1/1693/4923/t/2/assets/slideshow_image_1_2x.jpg?v=1939821968530320831648164266"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>20'22 Fresh Collection</h3>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                    style="background-color:#000;height:8%;border-radius:15%;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                    style="background-color:#000;height:8%;border-radius:15%;"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--Video Recent Launch -->
+
+    <div class="row mt-0 ml-0 mr-0 lg-12">
+        <div class="col-lg-12">
+            <div id="new-collection">
+                <div class="card card-size border-0">
+                    <video autoplay loop muted>
+                        <source src=" videoplayback (2).mp4" type="video/mp4">
+                    </video>
+                    <div class="card-img-overlay newc">
+
+                        <div class="newt display-4">Presenting Autumn Collection 20'22</div>
+                        <div class="display-4 text-light" style="font-family:'Times New Roman', Times, serif;">DA MILANO
+                            ITALIA</div>
+                        <a class="btn btn-lg btn-outline-light mt-5" href="products.html">Shop Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!--Categories Section-->
+    <div class="container-fluid">
+        <h3>
+            Shop By Categories
+        </h3>
+
+        <div class="row mb-5 mt-5 ">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <!--Backpacks-->
+                <div class="card border border-2 border-danger">
+                    <div class="card-header il">Backpacks</div>
+                    <div class="card-body bg-image hover-zoom">
+                        <img src="images\backpacks.jpg" width="250" height="250">
+
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.1,499</div>
+                </div>
+            </div>
+            <!--Handbags-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ">
+                <div class="card border border-2 border-danger ">
+                    <div class="card-header">Handbags</div>
+
+                    <div class="card-body">
+                        <img
+                            src="https://assets.ajio.com/medias/sys_master/root/20210403/cjZ7/60690b197cdb8c1f148077d0/-473Wx593H-461985887-beige-MODEL.jpg">
+
+                    </div>
+
+                    <div class="card-footer border-danger">Starting From Rs.2,700</div>
+                </div>
+            </div>
+            <!--Luggage Bags-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Luggage Bags</div>
+                    <div class="card-body">
+                        <img
+                            src="https://img.tatacliq.com/images/i8/437Wx649H/MP000000013742451_437Wx649H_202207091706041.jpeg">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.3,499</div>
+                </div>
+            </div>
+            <!--Handcuffs-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Handcuffs</div>
+                    <div class="card-body">
+                        <img src="https://looksgud.com/blog/wp-content/uploads/2019/07/satchel-bag.jpg">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.3400</div>
+                </div>
+            </div>
+        </div>
+        <!--Barrel Bags-->
+        <div class="row mb-5 mt-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Barrel Bags</div>
+                    <div class="card-body">
+                        <img
+                            src="https://www.arnoldgymgear.com/wp-content/uploads/2020/09/0000209_arnold-gym-bodybuilding-multi-sport-performance-duffel-royal-blue-classic-barrel-bag.png">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.1,899</div>
+                </div>
+            </div>
+            <!--Duffle Bags-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Duffle Bags</div>
+                    <div class="card-body">
+                        <img src="https://4.imimg.com/data4/AE/UY/MY-14661522/duffle-bag-500x500.jpg">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.1,999</div>
+                </div>
+            </div>
+            <!--Wallets-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Wallets</div>
+                    <div class="card-body">
+                        <img
+                            src="https://assetscdn1.paytm.com/images/catalog/product/A/AC/ACCNEW-MEN-S-TOSTEL1153764CE7554B3/1590578182115_0..JPEG">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.1,399</div>
+                </div>
+            </div>
+            <!--Wristlets-->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="card border border-2 border-danger">
+                    <div class="card-header">Wristlet</div>
+                    <div class="card-body">
+                        <img src="https://m.media-amazon.com/images/I/91WuB+yP3uL._AC_UL480_QL65_.jpg">
+                    </div>
+                    <div class="card-footer border-danger">Starting From Rs.2,699</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Sections for Men Women Students Office -->
+
+    <h3 id="collection-head">Our Collections</h3>
+    <div class="row mb-5 ml-5 mr-5 rr">
+        <!--Men Collection-->
+        <div class="col-lg-3 col-md-6 col-sm-6 ml-1">
+            <div class="card border-0  men">
+
+
+                <img class="ml-2 ii" src="https://i.pinimg.com/550x/2f/0e/99/2f0e99473fa2ace822edd8c076aca905.jpg">
+
+                <div class="card-img-overlay mn">
+                    <h5 class="card-title">MEN</h5>
+                    <p class="card-text" style="font-size:18px;">Backpacks<br>Gym bags<br>briefcase<br>Duffel bags</p>
+                    <a class="explore btn btn-md btn-outline-light " style="margin-top:-10%;"
+                        href="products.html#men-section">MEN'S SECTION</a>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <!---Women Collection-->
+        <div class="col-lg-3 col-md-6 col-sm-6 ml-1">
+
+
+            <div class="card border-0 mr-2 women">
+
+
+                <img class="ii" src="images/women-_home_banner.jpg">
+
+                <div class="card-img-overlay wn m">
+                    <h5 class="card-title">WOMEN</h5>
+                    <p class="card-text text-align-left" style="font-size:18px;">Tote Bag <br> Shoulder Bag <br>Duffel
+                        Bag <br>Wristlet</p>
+
+                    <a class="explore btn btn-md btn-outline-light" style="margin-top:-10%;"
+                        href="products.html#women-section">WOMEN'S
+                        SECTION</a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 ml-1">
+
+            <div class="card border-0 ml-2 student">
+
+                <img class="ii" src="https://img.joomcdn.net/8745d12b528d16f309590030d16e0a6e089875ee_original.jpeg">
+
+                <div class="card-img-overlay std">
+                    <h5 class="card-title">STUDENT</h5>
+                    <p class="card-text" style="font-size:18px;">Backpacks<br>Laptop Bags<br>Messenger Bags<br></p>
+                    <a class="explore btn btn-md btn-outline-light " style="margin-top:-10%;"
+                        href="products.html#student-section">Student's
+                        Section</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 ml-1 ">
+            <div class="card border-0 ml-2 office">
+                <img src="https://looksgud.com/blog/wp-content/uploads/2019/07/shoulder-bag.jpg" class="ii">
+
+                <div class="card-img-overlay off">
+                    <h5 class="card-title">Workplace</h5>
+                    <p class="card-text" style="font-size:18px;">Clutch Bags<br>Sling Bags<br>Shoulder Bags<br>Laptop
+                        Bags</p>
+                    <a class="explore btn btn-md btn-outline-light" style="margin-top:-10%;"
+                        href="products.html#workplace-section">Workplace
+                        Section </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row" style="background-color:rgb(237, 43, 108);">
+        <div class="col-12">
+            <div id="c34" class="carousel slide" data-bs-ride="false">
+
+                <div class="carousel-inner text-center" style="height:400px;">
+                    <h3 class="display-4 text-light">What our Customer's Say</h3>
+                    <div class="carousel-item active">
+                        <h5 class="display-6 text-light" style="font-family:'Montserrat-Black',sans-serif;">Amazing
+                            Experience</h5>
+                        <p class=" text-md text-light">Finally found some good site for my kids bags.</p>
+                        <div class='d-flex justify-content-center'>
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80"
+                                class="rounded-circle d-block" alt="" height="100" width="100">
+
+
+                        </div>
+                        <p class="display-7 text-light">Mike Charlie</p>
+                        <p class=" text-light">Youtuber</p>
+                        <blockquote class="blockquote text-light">New York,USA</blockquote>
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <h5 class="display-6 text-light" style="font-family:'Montserrat-Black',sans-serif;">Great
+                            Variety of Handbags</h5>
+                        <p class=" display-7 text-light">I have to pick the perfect Handbag for myself. It is really
+                            difficult to pick a handbag suited for your need.But I got a wide range of handbags. </p>
+                        <div class='d-flex justify-content-center'>
+                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVtYWxlJTIwbW9kZWx8ZW58MHx8MHx8&w=1000&q=80"
+                                class="rounded-circle d-block" alt="" height="100" width="100">
+
+
+                        </div>
+                        <p class="display-7 text-light">Lisa </p>
+                        <p class=" text-light">Fashion Designer</p>
+                        <blockquote class="blockquote text-light">New Jersey,USA</blockquote>
+
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <h5 class="display-6 text-light" style="font-family:'Montserrat-Black',sans-serif;">Perfect Gym
+                            bags</h5>
+                        <p class=" display-7 text-light">I got perfect Gym bags best suited for my needs.</p>
+                        <div class='d-flex justify-content-center'>
+                            <img src="data:image/jpeg;base64,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"
+                                class="rounded-circle d-block" alt="" height="100" width="100">
+
+
+                        </div>
+                        <p class="display-7 text-light">John Cena </p>
+                        <p class=" text-light">Professional Wrestler</p>
+                        <blockquote class="blockquote text-light">Florida,USA</blockquote>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#c34" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#c34" data-bs-slide="next">
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted ll pt-4">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between ">
+            <!-- Left -->
+
+            <div class="me-5 d-none d-lg-block t">
+                <span>
+                    <h4>Get connected with us</h4>
+                </span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="row">
+                <div class="col h1">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="col h2">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+
+
+                <div class="col h3">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="col h4">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="col h5">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="col h6">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class=" fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>BagsSite.com
+                        </h6>
+                        <p>
+                            Customer Service is our topmost priority.
+
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-dark text-reset">Men</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Women</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Students</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Office</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> Chitkara University,Punjab</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            sarbjot852@gmail.com
+                            <br>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            ronitkhokharr@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>+91- 9501724133</p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i>+91- 9416340264</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="index.html">BagsSite.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="suggestions.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#exampleModal").modal('show');
+
+        });
+    </script>
+</body>
+
+</html>

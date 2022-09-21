@@ -1,0 +1,211 @@
+.row {
+    border-radius: 50px;
+}
+
+.col {
+    height: 400px;
+
+}
+
+.col1 {
+    background-color: rgb(210, 9, 116);
+    /* width: 200px; */
+    color: aliceblue;
+    font-size: 20px;
+
+}
+
+.icons {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding-left: 27%;
+}
+
+.btn {
+    background-color: rgb(210, 9, 116);
+    color: aliceblue;
+}
+
+/*Navbar*/
+/* for all links */
+.L {
+    color: #000;
+}
+
+.L:hover {
+    text-decoration: underline;
+    color: rgb(210, 9, 116);
+}
+
+/*Links dropdown*/
+
+.product-dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 100px;
+    left: 100px;
+    padding: 0 50px;
+
+    background-color: #000;
+    z-index: 3232;
+
+
+}
+
+.L:hover .product-dropdown {
+    display: block;
+}
+
+/*Search Box*/
+.search {
+    width: 340px;
+
+}
+
+.search input {
+    width: 100%;
+    outline: none;
+    background: whitesmoke;
+    height: 32px;
+
+    border: 2.5px solid rgb(251, 0, 109);
+    border-radius: 34px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 2.5rem;
+}
+
+.search-icon {
+    z-index: 2;
+    margin-top: -9.5%;
+    margin-left: 90%;
+    color: rgb(251, 0, 109);
+}
+
+.search-icon i {
+    color: white;
+}
+
+/*Navbar icons*/
+.wishlist,
+.cart,
+.user {
+    font-size: 18.2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.wishlist:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+.cart:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+.user:hover {
+    color: rgb(251, 0, 109);
+    transform: scale(1.2, 1.2);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(251, 0, 109);
+}
+
+.col-lg-4 {
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+
+.h1 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h1:hover {
+    color: #4267B2;
+    transform: scale(1.5);
+
+}
+
+.h2 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h2:hover {
+    color: #1DA1F2;
+    transform: scale(1.5);
+
+}
+
+.h3 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h3:hover {
+    color: #DB4437;
+    background: transparent;
+    transform: scale(1.5);
+
+}
+
+.h4 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h4:hover {
+    color: #fb3958;
+    transform: scale(1.5);
+
+}
+
+.h5 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h5:hover {
+    color: #4267B2;
+    transform: scale(1.5);
+
+}
+
+.h6 {
+    transition: all 0.2s;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.h6:hover {
+    color: #000;
+    transform: scale(1.5);
+
+}
+@media screen and (max-width:999px)
+{
+    .col1{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+/*Google Map API*/
+/* Set the size of the div element that contains the map */
+#map {
+    height: 150px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+  
