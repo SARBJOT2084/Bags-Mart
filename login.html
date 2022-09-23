@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <link rel="icon" type="image/x-icon" href="images/bag.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +60,7 @@
 
 <body>
     <div class="fixed-top w-100 text-light pt-3" style="background-color:rgb(246, 58, 139);">
-      <a href="index.html"> <img class="ms-3 mb-3" src="images/lo.png" width="30" height="30"></a>
+        <a href="index.html"> <img class="ms-3 mb-3" src="images/lo.png" width="30" height="30"></a>
     </div>
     <div class="masthead" style="background-image: url('https://i.ytimg.com/vi/j_TQns44Qhk/maxresdefault.jpg');">
         <div class="color-overlay d-flex 
@@ -70,9 +70,7 @@
                 <p id="header">LOGIN</p>
                 <form class="needs-validation" novalidate>
                     <div class="col-md-12 mb-2">
-                        <div class="form-outline">
 
-                        </div>
 
                         <div class="input-group form-outline">
                             <label for="validationCustomUsername" class="form-label text-center "
@@ -82,7 +80,7 @@
                             <input type="text" class="form-control mt-5 me-5 border border-2"
                                 id="validationCustomUsername" aria-describedby="inputGroupPrepend" required />
                             <div class="invalid-feedback">
-                                Please choose a username.
+                                Please provide a username.
                             </div>
                         </div>
                     </div>
@@ -108,7 +106,8 @@
                         <span role="button" class="text-danger" tabindex="0">Forgot Password?</span>
                     </div>
                     <div class="button mt-1">
-                        <button type="submit" class="btn text-light " style="background-color:rgb(203, 77, 140);">Log
+                        <button type="submit" onclick="cch();" class="btn text-light "
+                            style="background-color:rgb(203, 77, 140);">Log
                             In</button>
 
                     </div>
@@ -180,7 +179,10 @@
                     form.classList.add('was-validated');
                 }, false);
             });
-        })();</script>
+        })();
+
+
+    </script>
 </body>
 
 </html>

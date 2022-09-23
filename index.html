@@ -74,10 +74,14 @@
                             style="margin-top:-10.24%;margin-left:-2.5%;">
                         <div class="mb-5" style="font-size:23px;">
                             15% off on your first order
-                            <div class="d-flex mt-3">
-                                <input type="email" class='ms-2 ' placeholder="Email" id="modal-input" required>
-                                <button type="button" class="btn text-light" id="modal-button">Subscribe</button>
-                            </div>
+                            <form>
+                                <div class="d-flex mt-3">
+
+                                    <input type="email" class='ms-2 ' placeholder="Email" id="modal-input" required>
+                                    <button type="submit" class="btn text-light" id="modal-button">Subscribe</button>
+
+                                </div>
+                            </form>
                             <p class="ms-3 mt-3"
                                 style="color:rgb(221,72,112);font-size:1.23rem;font-family:'Ubuntu',sans-serif;">
                                 Subscribe to our newsletter</p>
@@ -185,45 +189,6 @@
 
 
 
-    <!--sections displayed on hovering over links -->
-
-    <div id="product-section" class="shadow shadow-intensity-xl container">
-        <br><br><br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo ipsa
-        optio, soluta,
-        labore impedit
-        quasi amet suscipit fugiat ex autem alias cupiditate nostrum possimus pariatur temporibus praesentium ut
-        laborum
-        facilis perspiciatis tempore officia! Voluptate, suscipit minima perspiciatis repudiandae dolorem labore,
-        vel ea
-        cupiditate architecto et, earum commodi. Rem asperiores eos rerum, non impedit corporis similique officia
-        provident quam sint consequatur odit, ea eveniet vel, ratione illum aspernatur dolore velit ipsum dicta?
-        Obcaecati earum, eius blanditiis magni officia laborum modi saepe inventore quos consequuntur! Reprehenderit
-        sunt atque magnam, sapiente velit maiores numquam id facilis nobis nulla. Facere sapiente tempore pariatur
-        error
-        animi ullam dolores deleniti maiores repudiandae iste, atque sed neque numquam laudantium quos commodi
-        excepturi
-        totam at iusto. Laboriosam iure animi omnis accusamus officia saepe? Inventore atque necessitatibus mollitia
-        ipsam, excepturi optio id assumenda quod voluptas doloremque perferendis quas molestias iste. Eum ipsum
-        quasi
-        debitis consectetur sunt optio tenetur ipsa laborum error ipsam voluptas quas illum libero inventore,
-        doloremque
-        sed odit quibusdam illo tempora dignissimos unde! Maxime velit, similique eius distinctio quis rerum earum
-        aut
-        dolorum dolore perferendis expedita commodi laborum molestiae. Nulla, et consequuntur. Sit modi excepturi,
-        voluptatibus facilis autem ab error ullam voluptatem, quia vero dolor alias eligendi maiores blanditiis
-        accusantium libero, aut eius. Voluptas, ut incidunt neque sequi aliquam exercitationem voluptates. Saepe
-        dolores
-        sunt praesentium neque repellendus ipsam sint qui! Repudiandae numquam consectetur sequi beatae pariatur
-        nesciunt velit illum accusantium! Inventore cumque debitis iusto accusamus aut, magni in ullam tempore et
-        amet,
-        libero aliquid dolor explicabo totam fugit? Distinctio itaque amet cum ut expedita eveniet iure, illum,
-        nostrum
-        quo recusandae doloribus consequatur? Molestias laboriosam beatae dignissimos reiciendis dolor, architecto
-        ipsa
-        rem totam asperiores at reprehenderit quibusdam, error omnis impedit molestiae, neque sapiente labore cumque
-        facere possimus dolore. Libero amet laboriosam beatae ipsum iure, ea et eveniet!
-    </div>
 
 
     <!--Image Slider-->
@@ -301,10 +266,11 @@
                         <div class="newt display-4">Presenting Autumn Collection 20'22</div>
                         <div class="display-4 text-light" style="font-family:'Times New Roman', Times, serif;">DA MILANO
                             ITALIA</div>
-                        <a class="btn btn-lg btn-outline-light mt-5" href="products.html">Shop Now</a>
+
+                        <a class="btn btn-lg btn-outline-light border border-2 mt-5" href="products.html">Discover
+                            Collection</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -431,8 +397,6 @@
 
 
             </div>
-
-
 
         </div>
         <!---Women Collection-->
@@ -700,6 +664,13 @@
             $("#exampleModal").modal('show');
 
         });
+
+        // $("#modal-button").click(function () {
+        //     alert("You have subscribed our newsletter.");
+        //     $("#exampleModal").hide();
+        //     $('.modal').hide();
+        // });
+
     </script>
 </body>
 

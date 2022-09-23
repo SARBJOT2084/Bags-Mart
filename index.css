@@ -223,6 +223,7 @@ i {
 
 .row {
     text-align: center;
+
 }
 
 .card-body {
@@ -274,10 +275,16 @@ i {
     background: #A00649;
 }
 
+.card-footer::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
 
-.card-body:hover .card-footer {
+.card-body:hover::before .card-footer {
     background: linear-gradient(to right, #A00649, #A40048, #da2976, #e40868);
     color: #fff;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 
 
 }
@@ -377,13 +384,18 @@ i {
     .coll-c {
         margin-left: 600px;
     }
+    .card-body img{
+        height:200px;
+        width:150px;
+    }
+   
 
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:999px) {
     body {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 
@@ -640,7 +652,7 @@ i {
     border-radius: 0;
     /* border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; */
-  font-size:11px;
+    font-size: 11px;
 }
 
 #modal-input {
@@ -657,11 +669,13 @@ i {
 #modal-button:focus {
     outline: none;
 }
-.Icons{
-    transition:transform 0.32s ease-in-out;
+
+.Icons {
+    transition: transform 0.32s ease-in-out;
 }
-.Icons:hover{
-    transform:scale(1.3,1.3);
+
+.Icons:hover {
+    transform: scale(1.3, 1.3);
 }
 
 /*to change color of collapsable button*/

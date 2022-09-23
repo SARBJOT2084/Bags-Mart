@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" type="image/x-icon" href="images/bag.png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -87,7 +87,7 @@
             <!-- <i class="fa-solid fa-magnifying-glass ps-3"></i> -->
             <i class="fa-sharp fa-solid fa-heart  ms-5 wishlist"></i>
             <i class="fa-solid fa-bag-shopping ps-4 ms-4 cart"></i>
-            <a href="login.html" class="text-dark">   <i class="fa-solid fa-user ps-4 ms-4 user"></i></a>
+            <a href="login.html" class="text-dark"> <i class="fa-solid fa-user ps-4 ms-4 user"></i></a>
 
 
           </div>
@@ -186,47 +186,82 @@
           </figcaption>
         </figure>
         <br>
-        <div class="mb-1">
-          <label for="exampleFormControlInput1" class="form-label">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-        </div>
-        <br>
-        <div class="mb-1">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <br>
-        <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-        <div class="input-group">
+        <form class="needs-validation" novalidate>
+          <div class="mb-1">
+            <div class="input-group form-outline">
+              <label for="exampleFormControlInput1" class="form-label">Name*</label>
 
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false" aria-placeholder="+91- 0000000000"><img src="images/india.png" class="me-2" width="20"
-              height="20">IN(+91)</button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><img src="images/india.png" class="me-2" width="20"
-                  height="20">IN(+91)</a></li>
-            <li><a class="dropdown-item" href="#"><img src="images/united-states.png" class="me-2" width="20"
-                  height="20">US(+1) </a></li>
-            <li><a class="dropdown-item" href="#"><img src="images/united-kingdom.png" class="me-2" width="20"
-                  height="20">UK(+44)</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Other Country</a></li>
-          </ul>
-          <input rows="10" type="text" class="form-control" aria-label="Text input with dropdown button">
-        </div>
-        <br>
-        <label for="exampleFormControlInput1" class="form-label">How can we help?</label>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" rows="5"
-            style="height:300px;"></textarea>
-          <label for="floatingTextarea">Comments</label>
-        </div>
-        <br>
-        <div class="d-grid gap-2">
-          <button class="btn" style="margin-top:8%;" type="button">Submit</button>
-        </div>
+            </div>
+            <div class="input-group form-outline">
+              <input type="text" class="form-control" placeholder="Your Name" id="validationCustom01"
+                aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please provide your Name.
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <div class="mb-1">
+            <div class="input-group form-outline">
+              <label for="exampleFormControlInput1" class="form-label">Email address*</label>
+            </div>
+
+            <div class="input-group form-outline">
+              <input type="email" class="form-control" id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend" placeholder="name@gmail.com" required>
+              <div class="invalid-feedback">
+                Please provide a Valid Email.
+              </div>
+            </div>
+
+
+          </div>
+          <br>
+          <div class="input-group form-outline">
+            <label for="exampleFormControlInput1" class="form-label">Phone Number*</label>
+
+          </div>
+          <div class="input-group form-outline">
+
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" aria-placeholder="+91- 0000000000"><img src="images/india.png" class="me-2"
+                width="20" height="20">IN(+91)</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><img src="images/india.png" class="me-2" width="20"
+                    height="20">IN(+91)</a></li>
+              <li><a class="dropdown-item" href="#"><img src="images/united-states.png" class="me-2" width="20"
+                    height="20">US(+1) </a></li>
+              <li><a class="dropdown-item" href="#"><img src="images/united-kingdom.png" class="me-2" width="20"
+                    height="20">UK(+44)</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Other Country</a></li>
+            </ul>
+            <input rows="10" type="text" class="form-control" aria-label="Text input with dropdown button"
+              maxlength="10" id="validationCustom02" required>
+            <div class="invalid-feedback">
+              Please enter your Phone No.
+            </div>
+          </div>
+
+
+          <br>
+
+          <label for="exampleFormControlInput1" class="form-label">How can we help?</label>
+          <div class="form-floating form-outline input-group">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" rows="5"
+              style="height:300px;" required></textarea>
+            <label for="floatingTextarea">Comments</label>
+            <div class="invalid-feedback">Please provide a valid feedback. </div>
+          </div>
+
+          <br>
+          <div class="d-grid gap-2">
+            <button class="btn" style="margin-top:8%;" type="submit" onclick="return_to_home();">Submit</button>
+          </div>
+        </form>
       </div>
 
     </div>

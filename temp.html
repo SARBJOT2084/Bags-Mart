@@ -55,6 +55,34 @@
   <!--jquery file-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <style>
+    #but1 {
+      background-color: #900C3F;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+
+    }
+
+    #but2 {
+      background-color: #f39c12;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+
+    }
+
+    #but3 {
+      background-color: #dc7633;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+    }
+
+    .carousel-indicators {
+      top: 280px;
+    }
+
+
     /* .container {
       margin: top 10%;
     }
@@ -107,7 +135,7 @@
     .card:hover .card-text {
       top: 80px;
     } */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
     * {
       margin: 0;
@@ -196,7 +224,7 @@
       font-size: 20px;
       color: #644bff;
       cursor: pointer;
-    }
+    } */
   </style>
   <script>
     let suggestions = [
@@ -291,6 +319,202 @@
 </head>
 
 <body>
+  <!-- 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide w-50" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="but1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img height="400" src="https://m.media-amazon.com/images/I/81Xdo8YO4mS._AC_UL480_QL65_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img height="400" src="https://m.media-amazon.com/images/I/81HzMhbp3jS._SY695._SX._UX._SY._UY_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="400" src="https://m.media-amazon.com/images/I/81Xdo8YO4mS._AC_UL480_QL65_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="icon" type="image/x-icon" href="images/bag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--google montesserat font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <!--google ubuntu font -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!--google mulish font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <!--bootstrap->
+<!-CSSonly-->
+  <!--Bootstrap 5-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--JavaScript Bundle with Popper-->
+  <!--to make project working with bootstrap javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <!----Bootstrap 4-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <body>
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <div class="card shadow-lg p-3 bg-body rounded">
+        <div class="card-body">
+          <div class="d-flex justify-content-center">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+              <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1" id="but1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+                  id="but2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+                  id="but3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl3pxL4BsB3s8Tf1MVnH3sdyC-hHk5jtP_9ax-bUSFktsSz25tCIrIc-2H9trgMeXShO8nS7IRbtI&usqp=CAc"
+                    width="210" height="240">
+
+                </div>
+                <div class="carousel-item justify-content-center">
+                  <img
+                    src="https://images.dailyobjects.com/marche/product-images/bags-and-sleeves/dailyobjects/tote-bag/dailyobjects-blush-vegan-leather-fatty-tote-bag-images/DailyObjects-Blush-Vegan-Leather-Fatty-Tote-Bag.png?tr=cm-pad_resize,w-768,h-621,dpr-1"
+                    width="210" height="240">
+
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.dailyobjects.com/marche/product-images/bags-and-sleeves/dailyobjects/tote-bag/dailyobjects-tan-vegan-leather-fatty-tote-bag-images/DailyObjects-Tan-Vegan-Leather-Fatty-Tote-Bag.png?tr=cm-pad_resize,w-768,h-621,dpr-1"
+                    width="210" height="240">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="card-img-overlay">
+          <img class="d-flex justify-content-center"
+            src="https://images.dailyobjects.com/marche/icons/logo_named.png?tr=cm-pad_resize,w-135,h-27,dpr-1"
+            width="80" height="40">
+          <div class=" position-absolute top-0 end-0 py-1 rounded-circle my-3 me-2" style="background:whitesmoke;-webkit-box-shadow: 0 0 8px 4px #fff;
+                        -moz-box-shadow: 0 0 8px 4px #fff;
+                        box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.15); 
+"><i class="fa-sharp fa-solid fa-heart pe-2 ps-2 "></i></div>
+          <div class=" position-absolute top-1 end-0 py-1 rounded-circle my-1 me-2" style="background:whitesmoke;-webkit-box-shadow: 0 0 8px 4px #fff;
+                        -moz-box-shadow: 0 0 8px 4px #fff;
+                        box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.15); 
+"><i class="fa-solid fa-eye pe-2 ps-2"></i></div>
+
+        </div>
+        <div class="mask">
+
+          <h5>
+            <span class="badge bg-success ms-2 h-100 justify-content-start align-items-end">Eco <i
+                class="fa-solid fa-leaf"></i></span>
+          </h5>
+        </div>
+        <div class="card-text text-center">
+
+
+          <br>
+          <strong>Dialy Objects</strong>
+          <p class="text-center">Burgandy Vegan Leather | Fatty Tote Bag</p>
+          <div class="d-flex justify-content-center">
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:goldenrod;"></i>
+            </div>
+            <div class="ms-2">
+              <i class="fa-solid fa-star" style="color:lightgray"></i>
+            </div>
+
+
+          </div>
+
+          <p class="h4"> <sup>&#x20B9;</sup>2,199</p>
+
+          <p class="small-text">Free Delivery</p>
+
+
+          <div class="d-flex">
+            <button type="button" class="btn btn-primary justify-align-left w-50">Add to cart<i
+                class="fa-solid fa-cart-shopping"></i></button>
+            <button type="button" class="btn btn-primary ms-2 w-50">Buy Now &#x20B9;</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
   <!-- <div class="wrapper">
     <div class="search-input">
       <a href="" target="_blank" hidden></a>
@@ -305,55 +529,6 @@
       </div>
     </div>
   </div> -->
-  <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4">
-      <div class="form-outline">
-        <input type="text" class="form-control" id="validationCustom01" value="Mark" required />
-        <label for="validationCustom01" class="form-label">First name</label>
-        <div class="valid-feedback">Looks good!</div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="form-outline">
-        <input type="text" class="form-control" id="validationCustom02" value="Otto" required />
-        <label for="validationCustom02" class="form-label">Last name</label>
-        <div class="valid-feedback">Looks good!</div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="input-group form-outline">
-        <span class="input-group-text" id="inputGroupPrepend">@</span>
-        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-          required />
-        <label for="validationCustomUsername" class="form-label">Username</label>
-        <div class="invalid-feedback">Please choose a username.</div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="form-outline">
-        <input type="text" class="form-control" id="validationCustom03" required />
-        <label for="validationCustom03" class="form-label">City</label>
-        <div class="invalid-feedback">Please provide a valid city.</div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="form-outline">
-        <input type="text" class="form-control" id="validationCustom05" required />
-        <label for="validationCustom05" class="form-label">Zip</label>
-        <div class="invalid-feedback">Please provide a valid zip.</div>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-        <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-        <div class="invalid-feedback">You must agree before submitting.</div>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
 
   <!-- <div class="container">
     <div class="row">

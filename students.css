@@ -1,5 +1,10 @@
 /*Navbar*/
 /* for all links */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .L {
     color: #000;
 }
@@ -94,23 +99,42 @@
     }
 }
 
-.col-3 img{
+.col-3 img {
     /* This section calls the slideInFromLeft animation we defined above */
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
 
     padding: 30px;
-    
+
 }
-.but{
-    color:rgb(232, 10, 87);
-    border:1px solid rgb(232, 10, 87);
+
+.but {
+    color: rgb(232, 10, 87);
+    border: 1px solid rgb(232, 10, 87);
 }
-.but:hover{
-    color:white;
-    background-color:rgb(232, 10, 87);
+
+.but:hover {
+    color: white;
+    background-color: rgb(232, 10, 87);
     /* border:1px solid rgb(255, 213, 213); */
 }
-.card-img-overlay{
-    
+
+
+
+@media screen and (max-width:999px) {
+    #i {
+        width: 100%;
+    }
+
+    #j {
+        width: 100%;
+    }
+
+    #aa {
+        width: 100%;
+    }
+
+    #but1 {
+        font-size: 15px;
+    }
 }

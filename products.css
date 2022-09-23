@@ -90,13 +90,15 @@
     height: 3rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size:1.23rem;
+    font-size: 1.23rem;
 
 
 }
-.cc{
-    top:50px;
+
+.cc {
+    top: 50px;
 }
+
 .ic:hover {
 
     box-shadow: 0px 0px 2px 2px rgba(215, 0, 68, 0.15);
@@ -104,6 +106,8 @@
 
 .card {
     overflow: hidden;
+    /* border:2px solid rgba(0,0,0,0.25); */
+    border: 2px solid rgba(0, 0, 0, 0.175);
 }
 
 @media screen and (max-width:999px) {
@@ -164,7 +168,79 @@
 .carousel-indicators {
     top: 280px;
 }
-#ic:hover{
+
+#ic:hover {
     -webkit-box-shadow: 0 0 10px rgb(153, 5, 67);
-        box-shadow: 0 0 10px rgb(153, 5, 67);
+    box-shadow: 0 0 10px rgb(153, 5, 67);
+}
+
+.hid {
+    visibility: hidden;
+    color: white;
+}
+
+/*Extra Responsiveness*/
+@media screen and (max-width:999px) {
+    button {
+        width: 40px;
+        height: 38px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    strong {
+        font-size: 14.5px;
+    }
+
+    .aa {
+        visibility: hidden;
+    }
+
+    .hid {
+        visibility: visible;
+
+    }
+
+    button i {
+        margin-top: -19px;
+        z-index: 32;
+    }
+
+    .carousel-indicators {
+        top: 180px;
+        padding-top: 5%;
+
+    }
+
+    h5 span {
+        height: 20px;
+        font-size: 11px;
+    }
+
+    .card-img-overlay img {
+        height: 45px;
+        width: 28px;
+    }
+
+    .card {
+        width: 105%;
+   
+    }
+
+
+    .hidden {
+        color: #000;
+    }
+
+    .carousel-item img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .recent-launch {
+        height: 40px;
+    }
+
 }
